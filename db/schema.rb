@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -13,8 +14,8 @@
 ActiveRecord::Schema.define(:version => 20110809092745) do
 
   create_table "discussions", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
     t.integer  "starter_post_id"
   end
 
@@ -23,8 +24,8 @@ ActiveRecord::Schema.define(:version => 20110809092745) do
     t.string   "title"
     t.text     "content"
     t.string   "author"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -37,8 +38,8 @@ ActiveRecord::Schema.define(:version => 20110809092745) do
     t.integer  "descendant_id"
     t.boolean  "direct"
     t.integer  "count"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

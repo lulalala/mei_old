@@ -1,16 +1,17 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'jquery-rails', '~> 3.0.4'
+
 gem 'sqlite3'
 gem 'kaminari'
-gem 'paperclip', '~> 2.3'
-gem 'acts-as-dag', '~> 2.5.3'
+gem 'paperclip', '~> 3.5.1'
+gem 'acts-as-dag', git:'git://github.com/jrust/acts-as-dag.git'
 gem 'formatize'
-gem 'jquery-rails', '~>1.0.12'
 gem "ruby-openid"
 gem "rack-openid"
 
