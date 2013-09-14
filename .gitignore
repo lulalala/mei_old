@@ -10,4 +10,5 @@
 
 .ruby-version
 config/database.yml
+config/app_config.yml
 public/system/

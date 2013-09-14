@@ -23,6 +23,8 @@ gem 'formatize'
 gem "ruby-openid"
 gem "rack-openid"
 
+gem "settingslogic", "~> 2.0.9"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

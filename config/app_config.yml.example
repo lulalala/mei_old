@@ -1,0 +1,6 @@
+site_title: 'Mei the imageboard'
+last_reply_count: 3  # Number of last replies to disply on index
+# post_per_page: 5     # Number of post to show on index
+
+admin_openid_discovery_url: '' # OpenID generalized url (can be the same as admin openid but will lose a bit privacy)
+admin_openid: ''  # OpenID url (Your personal OpenID url)
