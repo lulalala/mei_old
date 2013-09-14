@@ -23,6 +23,9 @@ gem 'formatize'
 gem "ruby-openid"
 gem "rack-openid"
 
+gem 'turbolinks', '~> 1.3.0'
+gem 'jquery-turbolinks', '~> 2.0.1'
+
 gem "settingslogic", "~> 2.0.9"
 
 group :development do
