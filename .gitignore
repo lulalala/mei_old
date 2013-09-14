@@ -8,6 +8,6 @@
 /log/*.log
 /tmp
 
-.rvmrc
+.ruby-version
 config/database.yml
 public/system/
