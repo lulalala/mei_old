@@ -25,6 +25,11 @@ gem "rack-openid"
 
 gem "settingslogic", "~> 2.0.9"
 
+group :development do
+  gem 'quiet_assets'
+  gem 'better_errors'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
