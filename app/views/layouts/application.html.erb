@@ -2,13 +2,14 @@
 <html>
 <head>
   <title>Imageboard</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag :application %>
   <%= csrf_meta_tag %>
 </head>
 <body>
   <h1><%= link_to AppConfig.site_title, discussions_path %></h1>
   <p id="notice"><%= notice %></p>
   <%= yield %>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <%= javascript_include_tag :application %>
 </body>
 </html>

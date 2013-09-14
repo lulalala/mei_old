@@ -5,6 +5,14 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :assets do
+  gem 'sass-rails',   '~> 3.2.6'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier', '~> 2.2.1'
+  gem 'compass-rails', '~>  1.0.3'
+  gem 'gistyle'
+end
+
 gem 'jquery-rails', '~> 3.0.4'
 
 gem 'sqlite3'
