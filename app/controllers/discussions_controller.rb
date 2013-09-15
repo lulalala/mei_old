@@ -2,7 +2,7 @@ class DiscussionsController < ApplicationController
   # GET /discussions
   # GET /discussions.xml
   def index
-    @discussions = Discussion.order('updated_at DESC').page(params[:page]).per(5)
+    @discussions = Discussion.order('updated_at DESC').includes(:posts => [:children, :parents]).page(params[:page]).per(5)
     @discussion = Discussion.new
     @post = @discussion.posts.build
     @latest = Discussion.latest_discussions
@@ -16,7 +16,7 @@ class DiscussionsController < ApplicationController
   # GET /discussions/1
   # GET /discussions/1.xml
   def show
-    @discussion = Discussion.find(params[:id])
+    @discussion = Discussion.includes(:posts => [:children, :parents]).find(params[:id])
     @post = Post.new(:discussion => @discussion)
     @submit_text = "Post Reply"
 
