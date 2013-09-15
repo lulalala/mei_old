@@ -1,9 +1,3 @@
-GIT
-  remote: git://github.com/jrust/acts-as-dag.git
-  revision: 3e1b01d23116d7083a136302c4bde859f4222d39
-  specs:
-    acts-as-dag (2.5.7)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -36,6 +30,9 @@ GEM
     activesupport (3.2.14)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    acts-as-dag (3.0.0)
+      activemodel
+      activerecord
     arel (3.0.2)
     better_errors (0.8.0)
       coderay (>= 1.0.0)
@@ -155,7 +152,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  acts-as-dag!
+  acts-as-dag (~> 3.0.0)
   better_errors
   coffee-rails (~> 3.2.2)
   compass-rails (~> 1.0.3)

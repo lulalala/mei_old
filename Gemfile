@@ -18,7 +18,7 @@ gem 'jquery-rails', '~> 3.0.4'
 gem 'sqlite3'
 gem 'kaminari'
 gem 'paperclip', '~> 3.5.1'
-gem 'acts-as-dag', git:'git://github.com/jrust/acts-as-dag.git'
+gem 'acts-as-dag', '~> 3.0.0'
 gem 'formatize'
 gem "ruby-openid"
 gem "rack-openid"
